@@ -31,18 +31,21 @@ body {
 
 .header-container {
     justify-content: space-between;
-    width: 80%;
+    width: 1215px;
+    height: 100%;
     margin: auto;
 }
 
 .header-home-logo {
     justify-content: center;
+    align-items: center;
     width: fit-content;
-    height: 100px;
+    height: 100%;
 }
 
 .header-home-logo a {
-    align-self: center;
+    width: fit-content;
+    height: fit-content;
 }
 
 .header-home-logo a img {
@@ -60,7 +63,7 @@ body {
     justify-content: center;
     align-items: center;
     width: fit-content;
-    height: 100px;
+    height: 100%;
 }
 
 .header-home-nav ul li {
@@ -88,12 +91,17 @@ body {
 
 /* HOMEPAGE SECTION */
 
+.main-home {
+    width: 100%;
+    height: 639px;
+}
+
 .main-home-introduction {
     display: grid;
-    grid-template-rows: 629px;
+    grid-template-rows: 1fr;
     grid-template-columns: repeat(6, 1fr);
-    max-width: 1215px;
-    height: 640px;
+    width: 1215px;
+    height: 100%;
     margin: auto;
 }
 
@@ -101,7 +109,7 @@ body {
 
 .description-box {
     padding-top: 150px;
-    grid-row: 1 / 1;
+    grid-row: 1 / 2;
     grid-column: 1 / 4;
     color: white;
 }
@@ -125,7 +133,7 @@ body {
 .description-box h1 {
     font-family: Permanent Marker;
     font-weight: 600;
-    font-size: 80px;
+    font-size: 5rem;
     background: linear-gradient(to right, #900000, red, orange, yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -158,9 +166,16 @@ body {
 
 /* DISH CONTAINER CSS */
 
-.dish-container {
-    grid-row: 1 / 1;
+.dish-container-aligner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1 / 2;
     grid-column: 4 / 7;
+    height: 100%;
+}
+
+.dish-container {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
@@ -173,6 +188,7 @@ body {
     justify-content: center;
     border-radius: 15px;
     overflow: hidden;
+    background-color: white;
 
     transition: transform .5s;
 }
@@ -181,14 +197,16 @@ body {
     transform: translateY(-10px);
 }
 
+.dish-container div img {
+    object-fit: cover;
+    object-position: center;
+    width: max-content;
+    overflow: hidden;
+}
+
 .item-2-1 {
     grid-row: 1 / 4;
     grid-column: 1 / 4;
-}
-
-.item-2-1 img {
-    width: 500px;
-    margin-left: 100px;
 }
 
 .item-2-2 {
@@ -196,17 +214,9 @@ body {
     grid-column: 4 / 6;
 }
 
-.item-2-2 img {
-    width: 500px;
-}
-
 .item-2-3 {
     grid-row: 4 / 6;
     grid-column: 1 / 4;
-}
-
-.item-2-3 img {
-    width: 500px;
 }
 
 .item-2-4 {
@@ -214,30 +224,33 @@ body {
     grid-column: 4 / 6;
 }
 
-.item-2-4 img {
-    width: 240px;
-}
+/* ABOUT US SECTION*/
 
 .about-us {
     background-color: #1b1b1b;
-    height: fit-content;
+    height: 650px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
 .about-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
+    width: 1215px;
     margin: 0 auto;
-    padding: 75px 0;
     height: 100%;
     font-family: poppins;
 }
 
 .about-container div {
     color: white;
-    height: 490px;
+    height: 75%;
+}
+
+.about-container .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-container .img img {
@@ -246,7 +259,6 @@ body {
 
 .about-container .text {
     width: 620px;
-    height: fit-content;
 }
 
 .about-container .text h1 {
@@ -266,13 +278,17 @@ body {
 
 /* REVIEWS SECTION */
 
+.reviews {
+    padding: 75px 0;
+}
+
 .reviews-container {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-items: center;
     gap: 3em 1.5em;
-    width: 80%;
+    width: 1215px;
     margin: auto;
     padding: 1.5em;
     font-family: Poppins;
@@ -283,6 +299,11 @@ body {
     border: 1px solid #151515;
     padding: 20px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.reviews-box:hover  {
+    transform: translateY(-10px);
 }
 
 .reviews-container-info {
@@ -344,12 +365,13 @@ body {
     width: 100%;
     background-color: #1b1b1b;
     font-family: Poppins;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .footer-aligner {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 1215px;
     color: rgb(241, 241, 241);
     margin: 0 auto;
     padding: 40px 0;
@@ -402,7 +424,7 @@ body {
 }
 
 .footer-links ul {
-    margin: 0 50px;
+    margin-left: 50px;
 }
 
 .footer-links ul h2 {
@@ -578,6 +600,10 @@ body {
     font-family: Rubik;
 }
 
+#bk a {
+    color: black;
+}
+
 .bk-header {
     width: 100%;
     height: 100px;
@@ -585,6 +611,8 @@ body {
 }
 
 .bk-header-2 {
+    position: sticky;
+    top: 0px;
     width: 100%;
     height: 50px;
     background-color: #ffe6ca;
