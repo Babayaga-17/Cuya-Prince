@@ -525,7 +525,7 @@ body {
 
 .BurgerKing #logo {
     position: relative;
-    left: 100px;
+    left: 90px;
     top: 0;
     width: 170px;
     transition: all .5s;
