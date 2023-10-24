@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="nav.js" defer></script>
     <title>Cuya Prince</title>
     <link rel="icon" type="image/png" href="HomePage/Logo-Cuya_Eatery.png"/>
+
 </head>
 <body>
     <header class="header-home">
@@ -14,13 +18,17 @@
                 <a href="HomePage/Logo-Cuya_Eatery.png"><img src="HomePage/Logo-Cuya_Eatery.png" alt=""></a>
             </div>
             <nav class="header-home-nav">
-                <ul>
+                <ul data-visible="false">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">Abous Us</a></li>
                     <li><a href="">Contacts</a></li>
                 </ul>
             </nav>
-            <div class="header-dropdown"></div>
+            <div class="header-dropdown">
+                <button aria-controls="header-home-nav ul" aria-expanded="false">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
         </div>
     </header>
 

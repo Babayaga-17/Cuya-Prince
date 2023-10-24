@@ -1,5 +1,11 @@
-@media (max-width: 1275px) {
-
+@media (max-width: 1263px) {
+    .header-container, 
+    .main-home-introduction,
+    .about-container,
+    .reviews-container,
+    .footer-aligner {
+        max-width: 93%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -8,7 +14,7 @@
     .about-container,
     .reviews-container,
     .footer-aligner {
-        width: 92.6%;
+        max-width: 93%;
     }
 
     .header-home {
@@ -64,15 +70,19 @@
     .about-container .text p {
         font-size: 15px;
     }
+
+    .reviews-header {
+        font-size: 40px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 885px) {
     .header-container, 
     .main-home-introduction,
     .about-container,
     .reviews-container,
     .footer-aligner {
-        width: 92.6%;
+        max-width: 92.6%;
     }
 
     .description-box h1 {
@@ -98,6 +108,7 @@
     .dish-container {
         position: relative;
         top: 50px;
+        right: 0;
         width: 200px;
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -125,7 +136,11 @@
     }
 
     .about-us {
-        height: 400px;
+        height: fit-content;
+    }
+
+    .about-heading {
+        font-size: 40px;
     }
 
     .about-container {
@@ -149,6 +164,256 @@
     }
 
     .about-container .text p {
+        font-size: 14px;
+    }
+
+    .reviews-header {
+        font-size: 35px;
+    }
+
+    .footer-company-links {
+        gap: 2em;
+    }
+
+    .footer-links {
+        margin-bottom: 0.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container, 
+    .main-home-introduction,
+    .about-container,
+    .reviews-container,
+    .footer-aligner {
+        max-width: 92.6%;
+    }
+
+    .header-home-nav ul li {
+        font-size: 12px;
+    }
+
+    .description-box h1 {
+        font-size: 3rem;
+    }
+
+    .description-box p {
         font-size: 10px;
+    }
+
+    #order-button {
+        font-size: 9px;
+        width: 90px;
+        height: 25px;
+    }
+
+    .about-container .text p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 725px) {
+    .main-home {
+        height: fit-content;
+    }
+
+    .main-home-introduction {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .description-box {
+        padding-top: 100px;
+        width: 350px;
+        height: 0;
+        text-align: center;
+    }
+
+    .description-box span {
+        font-size: 6px;
+    }
+
+    .dish-container-aligner {
+        height: 260px;
+        width: 450px;
+    }
+
+    .dish-container {
+        position: relative;
+        top: 0;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+        filter: opacity(25%);
+    }
+
+    .item-2-1 {
+        grid-row: 1 / 4;
+        grid-column: 1 / 4;
+    }
+    
+    .item-2-2 {
+        grid-row: 1 / 3;
+        grid-column: 4 / 6;
+    }
+    
+    .item-2-3 {
+        grid-row: 4 / 6;
+        grid-column: 1 / 4;
+    }
+    
+    .item-2-4 {
+        grid-row: 3 / 6;
+        grid-column: 4 / 6;
+    }
+
+    .about-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 90%;
+    }
+
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-container .img {
+        width: 550px;
+    }
+
+    .about-container .text {
+        width: 550px;
+    }
+
+    .about-container .text p {
+        font-size: 20px;
+    }
+
+    .reviews-header {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header-home-nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: min(20vh, 5rem) 2em;
+        position: fixed;
+        inset: 0 0 0 60%;
+
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(0.5rem);
+
+        transform: translateX(100%);
+        transition: transform 0.4s ease-out;
+    }
+
+    .header-home-nav ul[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .header-dropdown {
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-dropdown button{
+        display: block;
+        border: none;
+        background-color: transparent;
+        color: white;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .header-home-nav ul li {
+        margin: 15px 0;
+    }
+
+    .about-container .text p {
+        font-size: 18px;
+    }
+
+    .reviews-header {
+        font-size: 30px;
+        width: 400px;
+    }
+
+    .footer-company-links {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    
+}
+
+@media (max-width: 450px) {
+    .about-heading {
+        font-size: 35px;
+    }
+
+    .about-container .text p {
+        font-size: 14px;
+    }
+
+    .reviews-header {
+        font-size: 25px;
+        width: 300px;
+    }
+
+    .reviews-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .customer-comment p {
+        font-size: 12px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-heading {
+        margin: 5px auto;
+    }
+
+    .about-container .text p {
+        font-size: 12px;
+    }
+
+    .reviews-header {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .reviews-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .profile {
+        flex-wrap: wrap;
+    }
+    
+    .profile-img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .name-user strong {
+        color: white;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .name-user span {
+        color: #979797;
+        font-size: 0.7rem;
     }
 }
