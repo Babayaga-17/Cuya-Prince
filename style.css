@@ -148,9 +148,6 @@ body {
 }
 
 #order-button {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 14px;
     border: 2px solid transparent;
     border-radius: 6px;
     width: 150px;
@@ -163,6 +160,18 @@ body {
 #order-button:hover {
     border: 2px solid white;
     background-color: transparent;
+}
+
+#order-button a {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .2s;
+}
+
+#order-button:hover a {
     color: white;
 }
 
