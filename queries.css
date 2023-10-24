@@ -8,6 +8,16 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .description-box h1 {
+        font-size: 70px;
+    }
+
+    .description-box p {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 1024px) {
     .header-container, 
     .main-home-introduction,
@@ -76,7 +86,7 @@
     }
 }
 
-@media (max-width: 885px) {
+@media (max-width: 900px) {
     .header-container, 
     .main-home-introduction,
     .about-container,
@@ -86,17 +96,20 @@
     }
 
     .description-box h1 {
-        font-size: 3.2rem;
+        font-size: 3.5rem;
     }
 
     .description-box p {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     #order-button {
-        font-size: 10px;
         width: 110px;
         height: 30px;
+    }
+
+    #order-button a {
+        font-size: 10px;
     }
 
     .dish-container-aligner {
@@ -180,6 +193,25 @@
     }
 }
 
+@media (max-width: 845px) {
+    .description-box h1 {
+        font-size: 3.2rem;
+    }
+
+    .description-box p {
+        font-size: 10px;
+    }
+
+    #order-button {
+        width: 100px;
+        height: 25px;
+    }
+
+    #order-button a {
+        font-size: 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .header-container, 
     .main-home-introduction,
@@ -224,13 +256,30 @@
 
     .description-box {
         padding-top: 100px;
-        width: 350px;
+        width: 400px;
         height: 0;
         text-align: center;
     }
 
     .description-box span {
         font-size: 6px;
+    }
+
+    .description-box h1 {
+        font-size: 3.5rem;
+    }
+
+    .description-box p {
+        font-size: 12px;
+    }
+
+    #order-button {
+        width: 100px;
+        height: 25px;
+    }
+
+    #order-button a {
+        font-size: 10px;
     }
 
     .dish-container-aligner {
